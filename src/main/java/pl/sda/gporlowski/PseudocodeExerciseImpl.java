@@ -1,32 +1,34 @@
 package pl.sda.gporlowski;
 
 public class PseudocodeExerciseImpl {
-    public static int findGreatestValue(int[] values) {
-        int greatestValue = 0;
-        for (int value : values) {
-            if (greatestValue < value) {
-                greatestValue = value;
+
+    public static int findGreatestValue(int[] arr) {
+        int greatestValue = arr[0];
+        for (int i : arr) {
+            if (greatestValue < i) {
+                greatestValue = i;
             }
         }
         return greatestValue;
     }
 
-    public static boolean numbersAreEven(int[] values) {
-        for (int value : values) {
-            if (value % 2 != 0) {
+    public static boolean numbersAreEven(int[] arr) {
+        for (int i : arr) {
+            if (i % 2 != 0) {
                 return false;
             }
         }
         return true;
     }
 
-    public static int positiveNumbersSum (int[] values) {
+    public static int positiveNumbersSum (int[] arr) {
         int result = 0;
-        for (int value : values) {
-            if (value > 0) {
-                result += value;
+        for (int i : arr) {
+            if (i > 0) {
+                result += i;
             }
         }
         return result;
     }
+
 }
