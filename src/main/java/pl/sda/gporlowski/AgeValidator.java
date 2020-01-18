@@ -5,8 +5,7 @@ import java.time.LocalDate;
 public class AgeValidator {
 
     public static boolean  isAdult(Person person){
-        LocalDate today = LocalDate.now();
-        LocalDate ageLimit = today.minusYears(18);
+        LocalDate ageLimit = LocalDate.now().minusYears(18);
 
         if (person.getDateOfBirth().isAfter(ageLimit)){
             System.out.println("Access denied");
