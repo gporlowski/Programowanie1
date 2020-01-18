@@ -1,6 +1,7 @@
 package pl.sda.gporlowski;
 
 public class RecursionExercise {
+
     public static int greatestCommonDivisorIteration (int numberA, int numberB) {
         int gcd = 1;
         for (int i = 1; i <= numberA && i <= numberB; i++) {
@@ -19,9 +20,11 @@ public class RecursionExercise {
     }
 
     static long factorial (long number) {
-        if (number == 0)
+        if (number == 0) {
             return 1;
-        else
-            return(number * factorial(number-1));
+        } else {
+            return (number * factorial(number - 1));
+        }
     }
+
 }
