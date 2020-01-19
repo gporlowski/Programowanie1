@@ -31,4 +31,14 @@ public class PseudocodeExerciseImpl {
         return result;
     }
 
+    public static int averagePositiveNumbers (int[] arr) {
+        int averageValue = 0;
+        for (int value : arr) {
+            if (value > 0) {
+                averageValue += value;
+            }
+        }
+        return averageValue;
+    }
+
 }
